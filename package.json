@@ -1,0 +1,29 @@
+{
+  "name": "batalha-naval-educativo",
+  "version": "1.0.0",
+  "description": "Jogo educativo de Batalha Naval para ensinar conceitos de matrizes",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "batalha-naval",
+    "educativo",
+    "matrizes",
+    "react",
+    "nodejs"
+  ],
+  "author": "UniRitter",
+  "license": "MIT",
+  "dependencies": {
+    "react-router-dom": "^7.6.2",
+    "socket.io-client": "^4.8.1",
+    "styled-components": "^6.1.18"
+  }
+}
